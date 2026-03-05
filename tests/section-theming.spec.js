@@ -243,3 +243,36 @@ test.describe('Navbar toggler (mask)', () => {
     expect(bg).not.toEqual('transparent')
   })
 })
+
+test.describe('Tooltip/popover scoping', () => {
+  test('tooltip in themed section inherits section primary', async ({ page }) => {
+    const trigger = page.locator('#components-neon [data-bs-toggle="tooltip"]')
+    await trigger.hover()
+    await page.waitForSelector('.tooltip.show')
+
+    const tipPrimary = await page.evaluate(() => {
+      const tip = document.querySelector('.tooltip.show')
+      return getComputedStyle(tip).getPropertyValue('--bs-primary').trim()
+    })
+
+    // Neon primary is #06d6a0 — tip should have it, not the default #0d6efd
+    expect(tipPrimary).not.toEqual('')
+    expect(tipPrimary).not.toContain('13, 110, 253')
+    expect(tipPrimary).not.toContain('0d6efd')
+  })
+
+  test('popover in themed section inherits section primary', async ({ page }) => {
+    const trigger = page.locator('#components-neon [data-bs-toggle="popover"]')
+    await trigger.click()
+    await page.waitForSelector('.popover.show')
+
+    const popoverPrimary = await page.evaluate(() => {
+      const popover = document.querySelector('.popover.show')
+      return getComputedStyle(popover).getPropertyValue('--bs-primary').trim()
+    })
+
+    expect(popoverPrimary).not.toEqual('')
+    expect(popoverPrimary).not.toContain('13, 110, 253')
+    expect(popoverPrimary).not.toContain('0d6efd')
+  })
+})

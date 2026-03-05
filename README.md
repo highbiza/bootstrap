@@ -64,7 +64,7 @@ Modals and offcanvas are standalone overlays — they don't automatically inheri
 </div>
 ```
 
-Tooltips and popovers are handled automatically — `css-var-scoping.js` copies all `--bs-*` custom properties from the trigger's themed ancestor (marked with `data-bs-theme-scope`) to the tip element.
+Tooltips and popovers are handled automatically — `css-var-scoping.js` copies all `--bs-*` custom properties from the trigger element to the tip.
 
 ### Why derived tokens live on `*` (not `:root`)
 
@@ -172,15 +172,7 @@ Bootstrap then behaves like vanilla — all tokens are static on `:root`. If you
 
 ### Tooltips and popovers
 
-Bootstrap appends tooltips/popovers to `<body>`, outside any themed section. `css-var-scoping.js` handles this automatically: it finds the trigger's closest `[data-bs-theme-scope]` ancestor and copies all `--bs-*` custom properties to the tip element.
-
-Add the attribute to your themed sections:
-
-```html
-<section data-bs-theme-scope style="--bs-primary: #0077b6; --bs-body-bg: #f8f9fa;">
-  <button data-bs-toggle="tooltip" title="Themed tooltip">Hover me</button>
-</section>
-```
+Bootstrap appends tooltips/popovers to `<body>`, outside any themed section. `css-var-scoping.js` handles this automatically: when a tip is inserted, it compares the trigger's computed `--bs-*` properties with `:root` and copies any differences to the tip element. No extra attributes or markup needed.
 
 ### SVG icons
 
