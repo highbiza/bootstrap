@@ -53,6 +53,19 @@ Auto-derived tokens (no manual override needed):
 | `--bs-border-color-translucent` | `--bs-body-color` | `color-mix()` 17.5% opacity |
 | `--bs-focus-ring-color` | `--bs-primary` | `color-mix()` 25% opacity |
 
+### Modals and offcanvas
+
+Modals and offcanvas are standalone overlays — they don't automatically inherit a section's theme. To theme them, set the base tokens directly:
+
+```html
+<div class="modal" id="myModal"
+     style="--bs-primary: #0077b6; --bs-primary-rgb: 0,119,182; --bs-body-bg: #f8f9fa; --bs-body-color: #1d3557;">
+  ...
+</div>
+```
+
+Tooltips and popovers are handled automatically — `css-var-scoping.js` copies all `--bs-*` custom properties from the trigger's themed ancestor (marked with `data-bs-theme-scope`) to the tip element.
+
 ### Why derived tokens live on `*` (not `:root`)
 
 CSS custom properties with `var()` references resolve **where the property is defined**, not where it's inherited. This creates a fundamental problem for section-level theming:
@@ -149,27 +162,24 @@ Bootstrap then behaves like vanilla — all tokens are static on `:root`. If you
 
 ### Contrast text
 
-`--bs-on-*` uses the oklch lightness trick: `oklch(from var(--bs-primary) calc((0.6 - l) * 999) 0 h)` — dark colors get white text, light colors get black text. Wrapped in `@supports` with static fallbacks on `:root` for older browsers.
+`--bs-on-*` uses the oklch lightness trick: `oklch(from var(--bs-primary) calc((0.6 - l) * 999) 0 h)` — dark colors get white text, light colors get black text. Wrapped in `@supports (color: oklch(from red l c h))` so older browsers fall back to the static values on `:root`.
 
 ### Browser support
 
 **Tier 1** (`color-mix()`, unconditional): Chrome 111+, Firefox 113+, Safari 16.2+. Covers link, hover, secondary/tertiary, border, and focus ring tokens.
 
-**Tier 2** (oklch relative color syntax, `@supports` gated): Chrome 122+, Firefox 128+, Safari 18+. Covers `--bs-on-*` contrast tokens and `--bs-emphasis-color`.
-
-Without Tier 2 support, `css-var-scoping.js` (included in `bootstrap.js`) automatically computes contrast colors for section overrides via JavaScript.
+**Tier 2** (oklch relative color syntax, `@supports` gated): Chrome 131+, Firefox 133+, Safari 18+. Covers `--bs-on-*` contrast tokens and `--bs-emphasis-color`. Without Tier 2, these tokens use static `:root` fallbacks — section overrides won't auto-derive contrast text, but all other theming works.
 
 ### Tooltips and popovers
 
-Bootstrap appends tooltips/popovers to `<body>`. `css-var-scoping.js` (included in `bootstrap.js`) automatically copies the section's color-schema class to the tip element so it inherits the correct theme.
+Bootstrap appends tooltips/popovers to `<body>`, outside any themed section. `css-var-scoping.js` handles this automatically: it finds the trigger's closest `[data-bs-theme-scope]` ancestor and copies all `--bs-*` custom properties to the tip element.
 
-### Modals and offcanvas
-
-Modals and offcanvas are standalone overlays — they don't automatically inherit a section's theme. To theme them, either place them inside a `.color-schema-*` element, or add the class directly:
+Add the attribute to your themed sections:
 
 ```html
-<div class="modal color-schema-ocean" id="myModal">...</div>
-<div class="offcanvas color-schema-neon" id="myOffcanvas">...</div>
+<section data-bs-theme-scope style="--bs-primary: #0077b6; --bs-body-bg: #f8f9fa;">
+  <button data-bs-toggle="tooltip" title="Themed tooltip">Hover me</button>
+</section>
 ```
 
 ### SVG icons
