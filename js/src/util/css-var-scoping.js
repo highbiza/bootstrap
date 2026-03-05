@@ -5,7 +5,7 @@
  * --------------------------------------------------------------------------
  *
  * Tooltip/popover scoping — copies --bs-* custom properties from the
- * trigger's themed ancestor to the tip (which lives in <body>).
+ * trigger element to the tip (which lives in <body>).
  */
 
 const PREFIX = '--bs-'
@@ -17,12 +17,7 @@ function scopeTip(event) {
     return
   }
 
-  const source = event.target.closest('[data-bs-theme-scope]')
-  if (!source) {
-    return
-  }
-
-  const style = getComputedStyle(source)
+  const style = getComputedStyle(event.target)
   const rootStyle = getComputedStyle(document.documentElement)
 
   for (const prop of style) {
