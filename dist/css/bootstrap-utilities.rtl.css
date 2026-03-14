@@ -260,9 +260,9 @@
 }
 
 .link-primary {
-  color: rgb(from var(--bs-primary) r g b/var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-primary) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-primary) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  color: rgb(from var(--bs-primary) r g b / var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-primary) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-primary) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-primary:hover, .link-primary:focus {
   color: color-mix(in srgb, var(--bs-primary), black 20%) !important;
@@ -271,9 +271,9 @@
 }
 
 .link-secondary {
-  color: rgb(from var(--bs-secondary) r g b/var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-secondary) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-secondary) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  color: rgb(from var(--bs-secondary) r g b / var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-secondary) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-secondary) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
   color: color-mix(in srgb, var(--bs-secondary), black 20%) !important;
@@ -282,9 +282,9 @@
 }
 
 .link-success {
-  color: rgb(from var(--bs-success) r g b/var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-success) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-success) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  color: rgb(from var(--bs-success) r g b / var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-success) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-success) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-success:hover, .link-success:focus {
   color: color-mix(in srgb, var(--bs-success), black 20%) !important;
@@ -293,9 +293,9 @@
 }
 
 .link-info {
-  color: rgb(from var(--bs-info) r g b/var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-info) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-info) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  color: rgb(from var(--bs-info) r g b / var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-info) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-info) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-info:hover, .link-info:focus {
   color: color-mix(in srgb, var(--bs-info), black 20%) !important;
@@ -304,9 +304,9 @@
 }
 
 .link-warning {
-  color: rgb(from var(--bs-warning) r g b/var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-warning) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-warning) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  color: rgb(from var(--bs-warning) r g b / var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-warning) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-warning) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-warning:hover, .link-warning:focus {
   color: color-mix(in srgb, var(--bs-warning), black 20%) !important;
@@ -315,9 +315,9 @@
 }
 
 .link-danger {
-  color: rgb(from var(--bs-danger) r g b/var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-danger) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-danger) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  color: rgb(from var(--bs-danger) r g b / var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-danger) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-danger) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-danger:hover, .link-danger:focus {
   color: color-mix(in srgb, var(--bs-danger), black 20%) !important;
@@ -326,9 +326,9 @@
 }
 
 .link-light {
-  color: rgb(from var(--bs-light) r g b/var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-light) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-light) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  color: rgb(from var(--bs-light) r g b / var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-light) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-light) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-light:hover, .link-light:focus {
   color: color-mix(in srgb, var(--bs-light), black 20%) !important;
@@ -337,9 +337,9 @@
 }
 
 .link-dark {
-  color: rgb(from var(--bs-dark) r g b/var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-dark) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-dark) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  color: rgb(from var(--bs-dark) r g b / var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-dark) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-dark) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-dark:hover, .link-dark:focus {
   color: color-mix(in srgb, var(--bs-dark), black 20%) !important;
@@ -348,14 +348,14 @@
 }
 
 .link-body-emphasis {
-  color: rgb(from var(--bs-emphasis-color) r g b/var(--bs-link-opacity, 1)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-emphasis-color) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-emphasis-color) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  color: rgb(from var(--bs-emphasis-color) r g b / var(--bs-link-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-emphasis-color) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-emphasis-color) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-body-emphasis:hover, .link-body-emphasis:focus {
-  color: rgb(from var(--bs-emphasis-color) r g b/var(--bs-link-opacity, 0.75)) !important;
-  -webkit-text-decoration-color: rgb(from var(--bs-emphasis-color) r g b/var(--bs-link-underline-opacity, 0.75)) !important;
-  text-decoration-color: rgb(from var(--bs-emphasis-color) r g b/var(--bs-link-underline-opacity, 0.75)) !important;
+  color: rgb(from var(--bs-emphasis-color) r g b / var(--bs-link-opacity, 0.75)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-emphasis-color) r g b / var(--bs-link-underline-opacity, 0.75)) !important;
+  text-decoration-color: rgb(from var(--bs-emphasis-color) r g b / var(--bs-link-underline-opacity, 0.75)) !important;
 }
 
 .focus-ring:focus {
@@ -367,8 +367,8 @@
   display: inline-flex;
   gap: 0.375rem;
   align-items: center;
-  -webkit-text-decoration-color: rgb(from var(--bs-link-color) r g b/var(--bs-link-opacity, 0.5));
-  text-decoration-color: rgb(from var(--bs-link-color) r g b/var(--bs-link-opacity, 0.5));
+  -webkit-text-decoration-color: rgb(from var(--bs-link-color) r g b / var(--bs-link-opacity, 0.5));
+  text-decoration-color: rgb(from var(--bs-link-color) r g b / var(--bs-link-opacity, 0.5));
   text-underline-offset: 0.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -772,35 +772,35 @@
 }
 
 .focus-ring-primary {
-  --bs-focus-ring-color: rgb(from var(--bs-primary) r g b/var(--bs-focus-ring-opacity));
+  --bs-focus-ring-color: rgb(from var(--bs-primary) r g b / var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-secondary {
-  --bs-focus-ring-color: rgb(from var(--bs-secondary) r g b/var(--bs-focus-ring-opacity));
+  --bs-focus-ring-color: rgb(from var(--bs-secondary) r g b / var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-success {
-  --bs-focus-ring-color: rgb(from var(--bs-success) r g b/var(--bs-focus-ring-opacity));
+  --bs-focus-ring-color: rgb(from var(--bs-success) r g b / var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-info {
-  --bs-focus-ring-color: rgb(from var(--bs-info) r g b/var(--bs-focus-ring-opacity));
+  --bs-focus-ring-color: rgb(from var(--bs-info) r g b / var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-warning {
-  --bs-focus-ring-color: rgb(from var(--bs-warning) r g b/var(--bs-focus-ring-opacity));
+  --bs-focus-ring-color: rgb(from var(--bs-warning) r g b / var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-danger {
-  --bs-focus-ring-color: rgb(from var(--bs-danger) r g b/var(--bs-focus-ring-opacity));
+  --bs-focus-ring-color: rgb(from var(--bs-danger) r g b / var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-light {
-  --bs-focus-ring-color: rgb(from var(--bs-light) r g b/var(--bs-focus-ring-opacity));
+  --bs-focus-ring-color: rgb(from var(--bs-light) r g b / var(--bs-focus-ring-opacity));
 }
 
 .focus-ring-dark {
-  --bs-focus-ring-color: rgb(from var(--bs-dark) r g b/var(--bs-focus-ring-opacity));
+  --bs-focus-ring-color: rgb(from var(--bs-dark) r g b / var(--bs-focus-ring-opacity));
 }
 
 .position-static {
@@ -926,52 +926,52 @@
 
 .border-primary {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-primary) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-primary) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-secondary {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-secondary) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-secondary) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-success {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-success) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-success) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-info {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-info) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-info) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-warning {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-warning) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-warning) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-danger {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-danger) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-danger) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-light {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-light) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-light) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-dark {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-dark) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-dark) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-black {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-black) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-black) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-white {
   --bs-border-opacity: 1;
-  border-color: rgb(from var(--bs-white) r g b/var(--bs-border-opacity)) !important;
+  border-color: rgb(from var(--bs-white) r g b / var(--bs-border-opacity)) !important;
 }
 
 .border-primary-subtle {
@@ -1875,57 +1875,57 @@
 }
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-primary) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-primary) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-secondary) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-secondary) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-success {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-success) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-success) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-info {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-info) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-info) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-warning {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-warning) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-warning) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-danger {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-danger) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-danger) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-light {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-light) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-light) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-dark {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-dark) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-dark) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-black {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-black) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-black) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-white) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-white) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-body {
   --bs-text-opacity: 1;
-  color: rgb(from var(--bs-body-color) r g b/var(--bs-text-opacity)) !important;
+  color: rgb(from var(--bs-body-color) r g b / var(--bs-text-opacity)) !important;
 }
 
 .text-muted {
@@ -2077,56 +2077,56 @@
 
 .link-underline-primary {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgb(from var(--bs-primary) r g b/var(--bs-link-underline-opacity)) !important;
-  text-decoration-color: rgb(from var(--bs-primary) r g b/var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-primary) r g b / var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgb(from var(--bs-primary) r g b / var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-secondary {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgb(from var(--bs-secondary) r g b/var(--bs-link-underline-opacity)) !important;
-  text-decoration-color: rgb(from var(--bs-secondary) r g b/var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-secondary) r g b / var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgb(from var(--bs-secondary) r g b / var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-success {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgb(from var(--bs-success) r g b/var(--bs-link-underline-opacity)) !important;
-  text-decoration-color: rgb(from var(--bs-success) r g b/var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-success) r g b / var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgb(from var(--bs-success) r g b / var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-info {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgb(from var(--bs-info) r g b/var(--bs-link-underline-opacity)) !important;
-  text-decoration-color: rgb(from var(--bs-info) r g b/var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-info) r g b / var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgb(from var(--bs-info) r g b / var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-warning {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgb(from var(--bs-warning) r g b/var(--bs-link-underline-opacity)) !important;
-  text-decoration-color: rgb(from var(--bs-warning) r g b/var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-warning) r g b / var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgb(from var(--bs-warning) r g b / var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-danger {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgb(from var(--bs-danger) r g b/var(--bs-link-underline-opacity)) !important;
-  text-decoration-color: rgb(from var(--bs-danger) r g b/var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-danger) r g b / var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgb(from var(--bs-danger) r g b / var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-light {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgb(from var(--bs-light) r g b/var(--bs-link-underline-opacity)) !important;
-  text-decoration-color: rgb(from var(--bs-light) r g b/var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-light) r g b / var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgb(from var(--bs-light) r g b / var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline-dark {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgb(from var(--bs-dark) r g b/var(--bs-link-underline-opacity)) !important;
-  text-decoration-color: rgb(from var(--bs-dark) r g b/var(--bs-link-underline-opacity)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-dark) r g b / var(--bs-link-underline-opacity)) !important;
+  text-decoration-color: rgb(from var(--bs-dark) r g b / var(--bs-link-underline-opacity)) !important;
 }
 
 .link-underline {
   --bs-link-underline-opacity: 1;
-  -webkit-text-decoration-color: rgb(from var(--bs-link-color) r g b/var(--bs-link-underline-opacity, 1)) !important;
-  text-decoration-color: rgb(from var(--bs-link-color) r g b/var(--bs-link-underline-opacity, 1)) !important;
+  -webkit-text-decoration-color: rgb(from var(--bs-link-color) r g b / var(--bs-link-underline-opacity, 1)) !important;
+  text-decoration-color: rgb(from var(--bs-link-color) r g b / var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-underline-opacity-0 {
@@ -2179,57 +2179,57 @@
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-primary) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-primary) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-secondary) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-secondary) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-success {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-success) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-success) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-info {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-info) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-info) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-warning {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-warning) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-warning) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-danger {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-danger) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-danger) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-light) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-light) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-dark) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-dark) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-black) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-black) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-white {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-white) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-white) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-body {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-body-bg) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-body-bg) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-transparent {
@@ -2239,12 +2239,12 @@
 
 .bg-body-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-secondary-bg) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-secondary-bg) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: rgb(from var(--bs-tertiary-bg) r g b/var(--bs-bg-opacity)) !important;
+  background-color: rgb(from var(--bs-tertiary-bg) r g b / var(--bs-bg-opacity)) !important;
 }
 
 .bg-opacity-10 {
