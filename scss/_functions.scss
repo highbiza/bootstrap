@@ -37,14 +37,19 @@
   @return red($value), green($value), blue($value);
 }
 
+// Emit rgb(from ...) as raw CSS so libsass doesn't intercept the rgb() call.
+@function rgb-from($color-var, $opacity-var) {
+  @return unquote("rgb(from #{$color-var} r g b / #{$opacity-var})");
+}
+
 // stylelint-disable scss/dollar-variable-pattern
 @function rgba-css-var($identifier, $target) {
   @if $identifier == "body" and $target == "bg" {
-    @return #{"rgb"}(from var(--#{$prefix}#{$identifier}-bg) r g b / var(--#{$prefix}#{$target}-opacity));
+    @return rgb-from(var(--#{$prefix}#{$identifier}-bg), var(--#{$prefix}#{$target}-opacity));
   } @if $identifier == "body" and $target == "text" {
-    @return #{"rgb"}(from var(--#{$prefix}#{$identifier}-color) r g b / var(--#{$prefix}#{$target}-opacity));
+    @return rgb-from(var(--#{$prefix}#{$identifier}-color), var(--#{$prefix}#{$target}-opacity));
   } @else {
-    @return #{"rgb"}(from var(--#{$prefix}#{$identifier}) r g b / var(--#{$prefix}#{$target}-opacity));
+    @return rgb-from(var(--#{$prefix}#{$identifier}), var(--#{$prefix}#{$target}-opacity));
   }
 }
 

@@ -381,7 +381,7 @@ sup {
 }
 
 a {
-  color: rgb(from var(--bs-link-color) r g b/var(--bs-link-opacity, 1));
+  color: rgb(from var(--bs-link-color) r g b / var(--bs-link-opacity, 1));
   text-decoration: underline;
 }
 a:hover {
