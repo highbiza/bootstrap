@@ -242,7 +242,7 @@ sup { top: -.5em; }
 // Links
 
 a {
-  color: rgb(from var(--#{$prefix}link-color) r g b / var(--#{$prefix}link-opacity, 1));
+  color: #{"rgb"}(from var(--#{$prefix}link-color) r g b / var(--#{$prefix}link-opacity, 1));
   text-decoration: $link-decoration;
 
   &:hover {

@@ -1,7 +1,7 @@
 @each $color, $value in $theme-colors {
   .link-#{$color} {
-    color: rgb(from var(--#{$prefix}#{$color}) r g b / var(--#{$prefix}link-opacity, 1)) if($enable-important-utilities, !important, null);
-    text-decoration-color: rgb(from var(--#{$prefix}#{$color}) r g b / var(--#{$prefix}link-underline-opacity, 1)) if($enable-important-utilities, !important, null);
+    color: #{"rgb"}(from var(--#{$prefix}#{$color}) r g b / var(--#{$prefix}link-opacity, 1)) if($enable-important-utilities, !important, null);
+    text-decoration-color: #{"rgb"}(from var(--#{$prefix}#{$color}) r g b / var(--#{$prefix}link-underline-opacity, 1)) if($enable-important-utilities, !important, null);
 
     @if $link-shade-percentage != 0 {
       &:hover,
@@ -15,14 +15,14 @@
 
 // One-off special link helper as a bridge until v6
 .link-body-emphasis {
-  color: rgb(from var(--#{$prefix}emphasis-color) r g b / var(--#{$prefix}link-opacity, 1)) if($enable-important-utilities, !important, null);
-  text-decoration-color: rgb(from var(--#{$prefix}emphasis-color) r g b / var(--#{$prefix}link-underline-opacity, 1)) if($enable-important-utilities, !important, null);
+  color: #{"rgb"}(from var(--#{$prefix}emphasis-color) r g b / var(--#{$prefix}link-opacity, 1)) if($enable-important-utilities, !important, null);
+  text-decoration-color: #{"rgb"}(from var(--#{$prefix}emphasis-color) r g b / var(--#{$prefix}link-underline-opacity, 1)) if($enable-important-utilities, !important, null);
 
   @if $link-shade-percentage != 0 {
     &:hover,
     &:focus {
-      color: rgb(from var(--#{$prefix}emphasis-color) r g b / var(--#{$prefix}link-opacity, .75)) if($enable-important-utilities, !important, null);
-      text-decoration-color: rgb(from var(--#{$prefix}emphasis-color) r g b / var(--#{$prefix}link-underline-opacity, .75)) if($enable-important-utilities, !important, null);
+      color: #{"rgb"}(from var(--#{$prefix}emphasis-color) r g b / var(--#{$prefix}link-opacity, .75)) if($enable-important-utilities, !important, null);
+      text-decoration-color: #{"rgb"}(from var(--#{$prefix}emphasis-color) r g b / var(--#{$prefix}link-underline-opacity, .75)) if($enable-important-utilities, !important, null);
     }
   }
 }
