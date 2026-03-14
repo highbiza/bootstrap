@@ -1125,6 +1125,38 @@
     --bs-gutter-y: 3rem;
   }
 }
+.bg-primary {
+  color: var(--bs-on-primary);
+}
+
+.bg-secondary {
+  color: var(--bs-on-secondary);
+}
+
+.bg-success {
+  color: var(--bs-on-success);
+}
+
+.bg-info {
+  color: var(--bs-on-info);
+}
+
+.bg-warning {
+  color: var(--bs-on-warning);
+}
+
+.bg-danger {
+  color: var(--bs-on-danger);
+}
+
+.bg-light {
+  color: var(--bs-on-light);
+}
+
+.bg-dark {
+  color: var(--bs-on-dark);
+}
+
 .d-inline {
   display: inline !important;
 }

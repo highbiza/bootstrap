@@ -804,3 +804,9 @@ $utilities: map-merge(
   ),
   $utilities
 );
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color} {
+    color: var(--#{$prefix}on-#{$color});
+  }
+}
