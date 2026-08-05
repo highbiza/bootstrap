@@ -6916,6 +6916,11 @@ textarea.form-control-lg {
 .placeholder-glow .placeholder {
   animation: placeholder-glow 2s ease-in-out infinite;
 }
+@media (prefers-reduced-motion: reduce) {
+  .placeholder-glow .placeholder {
+    animation: none;
+  }
+}
 
 @keyframes placeholder-glow {
   50% {
@@ -6928,6 +6933,11 @@ textarea.form-control-lg {
   -webkit-mask-size: 200% 100%;
   mask-size: 200% 100%;
   animation: placeholder-wave 2s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .placeholder-wave {
+    animation: none;
+  }
 }
 
 @keyframes placeholder-wave {

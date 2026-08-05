@@ -145,7 +145,7 @@ const isVisible = element => {
     return false;
   }
   const elementIsVisible = getComputedStyle(element).getPropertyValue('visibility') === 'visible';
-  // Handle `details` element as its content may falsie appear visible when it is closed
+  // Handle `details` element as its content may falsely appear visible when it is closed
   const closedDetails = element.closest('details:not([open])');
   if (!closedDetails) {
     return elementIsVisible;
@@ -2913,7 +2913,7 @@ defineJQueryPlugin(Offcanvas);
  * --------------------------------------------------------------------------
  *
  * Tooltip/popover scoping — copies --bs-* custom properties from the
- * trigger's themed ancestor to the tip (which lives in <body>).
+ * trigger element to the tip (which lives in <body>).
  */
 
 const PREFIX = '--bs-';
@@ -2923,11 +2923,7 @@ function scopeTip(event) {
   if (!tip) {
     return;
   }
-  const source = event.target.closest('[data-bs-theme-scope]');
-  if (!source) {
-    return;
-  }
-  const style = getComputedStyle(source);
+  const style = getComputedStyle(event.target);
   const rootStyle = getComputedStyle(document.documentElement);
   for (const prop of style) {
     if (!prop.startsWith(PREFIX)) {
