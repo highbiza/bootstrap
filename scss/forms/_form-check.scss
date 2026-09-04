@@ -28,6 +28,7 @@
 
 .form-check-input {
   --#{$prefix}form-check-bg: #{$form-check-input-bg};
+  --#{$prefix}form-check-color: #{$form-check-input-checked-color};
 
   flex-shrink: 0;
   width: $form-check-input-width;
@@ -35,14 +36,26 @@
   margin-top: ($line-height-base - $form-check-input-width) * .5; // line-height minus check height
   vertical-align: top;
   appearance: none;
+  position: relative;
   background-color: var(--#{$prefix}form-check-bg);
-  background-image: var(--#{$prefix}form-check-bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   border: $form-check-input-border;
   print-color-adjust: exact; // Keep themed appearance for print
   @include transition($form-check-transition);
+
+  &::after {
+    display: none;
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: var(--#{$prefix}form-check-color);
+    -webkit-mask: var(--#{$prefix}form-check-bg-image) center / contain no-repeat;
+    mask: var(--#{$prefix}form-check-bg-image) center / contain no-repeat;
+  }
+
+  &:checked::after,
+  &[type="checkbox"]:indeterminate::after {
+    display: block;
+  }
 
   &[type="checkbox"] {
     @include border-radius($form-check-input-border-radius);
@@ -85,6 +98,8 @@
   }
 
   &[type="checkbox"]:indeterminate {
+    --#{$prefix}form-check-color: #{$form-check-input-indeterminate-color};
+
     background-color: $form-check-input-indeterminate-bg-color;
     border-color: $form-check-input-indeterminate-border-color;
 
@@ -127,24 +142,29 @@
   .form-check-input {
     --#{$prefix}form-switch-bg: #{escape-svg($form-switch-bg-image)};
 
+    --#{$prefix}form-check-color: #{$form-switch-color};
+
     width: $form-switch-width;
     margin-left: $form-switch-padding-start * -1;
-    background-image: var(--#{$prefix}form-switch-bg);
-    background-position: left center;
     @include border-radius($form-switch-border-radius, 0);
     @include transition($form-switch-transition);
 
+    &::after {
+      display: block;
+      -webkit-mask: var(--#{$prefix}form-switch-bg) left center / contain no-repeat;
+      mask: var(--#{$prefix}form-switch-bg) left center / contain no-repeat;
+    }
+
     &:focus {
-      --#{$prefix}form-switch-bg: #{escape-svg($form-switch-focus-bg-image)};
+      --#{$prefix}form-check-color: #{$form-switch-focus-color};
     }
 
     &:checked {
-      background-position: $form-switch-checked-bg-position;
+      --#{$prefix}form-check-color: #{$form-switch-checked-color};
 
-      @if $enable-gradients {
-        --#{$prefix}form-switch-bg: #{escape-svg($form-switch-checked-bg-image)}, var(--#{$prefix}gradient);
-      } @else {
-        --#{$prefix}form-switch-bg: #{escape-svg($form-switch-checked-bg-image)};
+      &::after {
+        -webkit-mask-position: $form-switch-checked-bg-position;
+        mask-position: $form-switch-checked-bg-position;
       }
     }
   }
